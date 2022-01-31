@@ -6,7 +6,7 @@ public class Processing extends PApplet {
     public static final int WIDTH = 1080;
     public static final int HEIGHT = 720;
     public static final int DIAMETER = 20;
-    int height1=HEIGHT * 1/ 5;
+    int height1=HEIGHT * 1 / 5;
     int height2=HEIGHT * 2 / 5;
     int height3=HEIGHT * 3 / 5;
     int height4=HEIGHT * 4 / 5;
@@ -34,7 +34,7 @@ public class Processing extends PApplet {
 
     @Override
     public void draw() {
-
+        background(255);
         ellipse(speed1,height1, DIAMETER, DIAMETER);
         speed1=speed1+1;
         ellipse(speed2,height2, DIAMETER, DIAMETER);
