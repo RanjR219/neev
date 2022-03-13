@@ -16,6 +16,7 @@ public class TwelveDaysTest {
     public void testVerseOne() {
         String expectedVerseOne = "On the first day of Christmas my true love gave to me: " +
                 "a Partridge in a Pear Tree.\n";
+        System.out.println(twelveDays.verse(1));
         assertEquals(expectedVerseOne, twelveDays.verse(1));
     }
 
@@ -129,7 +130,7 @@ public class TwelveDaysTest {
         assertEquals(expectedVersesOneToThree, twelveDays.verses(1, 3));
     }
 
-    @Ignore("Remove to run test")
+
     @Test
     public void testFourthToSixthVerses() {
         String expectedVersesFourToSix = "On the fourth day of Christmas my true love gave to me: " + 
@@ -141,7 +142,7 @@ public class TwelveDaysTest {
         assertEquals(expectedVersesFourToSix, twelveDays.verses(4, 6));
     }
 
-    @Ignore("Remove to run test")
+
     @Test
     public void testSingWholeSong() {
         String expectedSong = "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.\n" +
